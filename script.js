@@ -9,6 +9,9 @@ $(document).ready(function () {
             const details = `
                 <h4>${ticket.title}</h4>
                 <p>${ticket.description}</p>
+                <p><strong>Reported by:</strong> ${ticket.name}</p>
+                <p><strong>Created:</strong> ${ticket.createdDateTime}</p>
+                <p><strong>Method of Contact:</strong> ${ticket.methodOfContact}</p>
                 <p><strong>Status:</strong> <span class="status-${ticket.status.toLowerCase().replace(" ", "-")}">${ticket.status}</span></p>
                 <h5 class="mt-3">Updates</h5>
                 ${ticket.updates.length > 0 ? ticket.updates.map(update => `
@@ -61,7 +64,8 @@ $(document).ready(function () {
 
         const terminalList = $("#terminalList");
         terminalList.empty();
-        for (const [vdu, status] of Object.entries(terminals)) {
+        Object.keys(terminals).sort().forEach(vdu => {
+            const status = terminals[vdu];
             const statusClass = `status-${status.toLowerCase().replace(" ", "-")}`;
             terminalList.append(`
                 <li>
@@ -69,7 +73,7 @@ $(document).ready(function () {
                     ${vdu}
                 </li>
             `);
-        }
+        });
     }
 
     // Make the lists clickable to show details
