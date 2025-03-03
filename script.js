@@ -50,6 +50,28 @@ $(document).ready(function () {
         });
     }
 
+    // Function to generate terminal list
+    function generateTerminalList(tickets) {
+        const terminals = {};
+        tickets.forEach(ticket => {
+            if (!terminals[ticket.vdu]) {
+                terminals[ticket.vdu] = ticket.status;
+            }
+        });
+
+        const terminalList = $("#terminalList");
+        terminalList.empty();
+        for (const [vdu, status] of Object.entries(terminals)) {
+            const statusClass = `status-${status.toLowerCase().replace(" ", "-")}`;
+            terminalList.append(`
+                <li>
+                    <div class="status-indicator ${statusClass}"></div>
+                    ${vdu}
+                </li>
+            `);
+        }
+    }
+
     // Make the lists clickable to show details
     $("#openTickets").on("click", "li", function() {
         showTicketDetails(parseInt($(this).data("id")));
@@ -66,6 +88,7 @@ $(document).ready(function () {
         .then(data => {
             tickets = data;
             updateSidebarMenu(tickets);
+            generateTerminalList(tickets);
         })
         .catch(err => console.error(err));
 });

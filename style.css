@@ -63,3 +63,40 @@ body {
     font-weight: bold;
     color: #007bff;
 }
+ul.list-unstyled li {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+ul.list-unstyled li:last-child {
+    border-bottom: none;
+}
+.terminal-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.terminal-list li {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.terminal-list .status-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.status-open {
+    background-color: #dc3545;
+}
+.status-in-progress {
+    background-color: #ffc107;
+}
+.status-resolved {
+    background-color: #28a745;
+}
