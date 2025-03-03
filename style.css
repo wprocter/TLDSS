@@ -1,0 +1,65 @@
+/* Moved from index.html <style> block */
+body {
+    display: flex;
+    min-height: 100vh;
+}
+#sidebar {
+    width: 250px;
+    background: #f8f9fa;
+    padding: 15px;
+    border-right: 1px solid #ddd;
+}
+#main-content {
+    flex: 1;
+    padding: 15px;
+}
+.ticket-card {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    cursor: pointer;
+}
+.ticket-card:hover {
+    background: #f8f9fa;
+}
+.ticket-card h5 {
+    margin-bottom: 10px;
+}
+.ticket-card p {
+    margin: 0;
+}
+.status-open {
+    color: #dc3545;
+}
+.status-in-progress {
+    color: #ffc107;
+}
+.status-resolved {
+    color: #28a745;
+}
+.ticket-details {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f8f9fa;
+}
+.ticket-details h4 {
+    margin-bottom: 15px;
+}
+.update {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fff;
+}
+.update p {
+    margin: 0;
+}
+.update .author {
+    font-weight: bold;
+    color: #007bff;
+}
