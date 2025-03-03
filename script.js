@@ -1,31 +1,6 @@
 $(document).ready(function () {
     var tickets = [];
 
-    // Function to generate ticket cards
-    function generateTicketCards(tickets) {
-        const container = $("#tickets-container");
-        container.empty(); // Clear existing content
-        tickets.forEach(ticket => {
-            const statusClass = `status-${ticket.status.toLowerCase().replace(" ", "-")}`;
-            const card = `
-                <div class="col-md-4">
-                    <div class="ticket-card" data-id="${ticket.id}">
-                        <h5>${ticket.title}</h5>
-                        <p>${ticket.description}</p>
-                        <p><strong>Status:</strong> <span class="${statusClass}">${ticket.status}</span></p>
-                    </div>
-                </div>
-            `;
-            container.append(card);
-        });
-
-        // Add click event to ticket cards
-        $(".ticket-card").on("click", function () {
-            const ticketId = $(this).data("id");
-            showTicketDetails(ticketId);
-        });
-    }
-
     // Function to show ticket details
     function showTicketDetails(ticketId) {
         const ticket = tickets.find(t => t.id === ticketId);
@@ -61,25 +36,35 @@ $(document).ready(function () {
 
         $("#openTickets").empty();
         openTickets.forEach(ticket => {
-            $("#openTickets").append(`<li>${ticket.vdu} - ${ticket.title}</li>`);
+            $("#openTickets").append(`<li data-id="${ticket.id}">${ticket.vdu} - ${ticket.title}</li>`);
         });
 
         $("#inProgressTickets").empty();
         inProgressTickets.forEach(ticket => {
-            $("#inProgressTickets").append(`<li>${ticket.vdu} - ${ticket.title}</li>`);
+            $("#inProgressTickets").append(`<li data-id="${ticket.id}">${ticket.vdu} - ${ticket.title}</li>`);
         });
 
         $("#resolvedTickets").empty();
         resolvedTickets.forEach(ticket => {
-            $("#resolvedTickets").append(`<li>${ticket.vdu} - ${ticket.title}</li>`);
+            $("#resolvedTickets").append(`<li data-id="${ticket.id}">${ticket.vdu} - ${ticket.title}</li>`);
         });
     }
+
+    // Make the lists clickable to show details
+    $("#openTickets").on("click", "li", function() {
+        showTicketDetails(parseInt($(this).data("id")));
+    });
+    $("#inProgressTickets").on("click", "li", function() {
+        showTicketDetails(parseInt($(this).data("id")));
+    });
+    $("#resolvedTickets").on("click", "li", function() {
+        showTicketDetails(parseInt($(this).data("id")));
+    });
 
     fetch('tickets.json')
         .then(response => response.json())
         .then(data => {
             tickets = data;
-            generateTicketCards(tickets);
             updateSidebarMenu(tickets);
         })
         .catch(err => console.error(err));

@@ -10,12 +10,12 @@
             {
                 "author": "TechTeam",
                 "message": "Restarted the computer and ran a virus scan. No issues found.",
-                "timestamp": "2023-10-01 10:00 AM"
+                "timestamp": "2025-02-28 10:00 AM"
             },
             {
                 "author": "TechTeam",
                 "message": "Updated the system drivers. Monitoring for further issues.",
-                "timestamp": "2023-10-01 11:30 AM"
+                "timestamp": "2025-02-28 11:30 AM"
             }
         ]
     },
@@ -30,7 +30,7 @@
             {
                 "author": "TechTeam",
                 "message": "Checked the event logs. No critical errors found.",
-                "timestamp": "2023-10-01 09:00 AM"
+                "timestamp": "2025-02-28 09:00 AM"
             }
         ]
     },
@@ -54,7 +54,7 @@
             {
                 "author": "TechTeam",
                 "message": "Reinstalled the reporting software. Issue persists.",
-                "timestamp": "2023-10-01 02:00 PM"
+                "timestamp": "2025-02-28 02:00 PM"
             }
         ]
     },
@@ -69,7 +69,157 @@
             {
                 "author": "TechTeam",
                 "message": "Replaced the faulty RAM. Issue resolved.",
-                "timestamp": "2023-10-01 04:00 PM"
+                "timestamp": "2025-02-28 04:00 PM"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Laura",
+        "vdu": "SENIOR-RECEPTION-PC1",
+        "title": "Senior Receptionist Terminal - Unauthorized Transactions",
+        "description": "The senior receptionist terminal (Machine: SENIOR-RECEPTION-PC1) is showing unauthorized financial transactions in the membership system.",
+        "status": "Open",
+        "updates": [
+            {
+                "author": "TechTeam",
+                "message": "Reviewed transaction logs. No unusual activity detected.",
+                "timestamp": "2025-03-01 09:15 AM"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "James",
+        "vdu": "MANAGER-PC3",
+        "title": "Managerial Office Workstation - Payroll Errors",
+        "description": "The managerial workstation (Machine: MANAGER-PC3) is generating incorrect payroll calculations, causing discrepancies in employee payments.",
+        "status": "In Progress",
+        "updates": [
+            {
+                "author": "TechTeam",
+                "message": "Audited payroll software. No configuration errors found.",
+                "timestamp": "2025-03-01 11:45 AM"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Sophie",
+        "vdu": "MAINTENANCE-PC1",
+        "title": "Maintenance System - Security Camera Feed Lost",
+        "description": "The maintenance system (Machine: MAINTENANCE-PC1) has lost access to the security camera feeds, impacting monitoring capabilities.",
+        "status": "Open",
+        "updates": [
+            {
+                "author": "TechTeam",
+                "message": "Restarted the camera server. Feeds still unavailable.",
+                "timestamp": "2025-03-02 10:30 AM"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Oliver",
+        "vdu": "CUSTOMER-WIFI",
+        "title": "Customer Wi-Fi Network - Intermittent Connectivity",
+        "description": "The customer Wi-Fi network (Network: CUSTOMER-WIFI) is experiencing intermittent connectivity, causing complaints from visitors.",
+        "status": "Open",
+        "updates": [
+            {
+                "author": "TechTeam",
+                "message": "Rebooted the Wi-Fi router. Issue persists.",
+                "timestamp": "2025-03-02 02:00 PM"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Emily",
+        "vdu": "STAFF-WIFI",
+        "title": "Staff Wi-Fi Network - Email Access Issues",
+        "description": "The staff Wi-Fi network (Network: STAFF-WIFI) is preventing access to staff email and internal communication systems.",
+        "status": "In Progress",
+        "updates": [
+            {
+                "author": "TechTeam",
+                "message": "Checked network configuration. No issues found.",
+                "timestamp": "2025-03-03 09:00 AM"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "name": "Daniel",
+        "vdu": "VENDING-MACHINE-1",
+        "title": "Integrated Vending Machine - Stock Monitoring Failure",
+        "description": "The integrated vending machine (Machine: VENDING-MACHINE-1) is not reporting stock levels, causing inventory management issues.",
+        "status": "Open",
+        "updates": [
+            {
+                "author": "TechTeam",
+                "message": "Restarted the vending machine. Stock monitoring still offline.",
+                "timestamp": "2025-03-03 01:00 PM"
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "name": "Charlotte",
+        "vdu": "HVAC-CONTROL",
+        "title": "HVAC Control System - Temperature Fluctuations",
+        "description": "The HVAC control system (System: HVAC-CONTROL) is causing temperature fluctuations across the leisure center, leading to discomfort.",
+        "status": "In Progress",
+        "updates": [
+            {
+                "author": "TechTeam",
+                "message": "Adjusted temperature settings. Issue not resolved.",
+                "timestamp": "2025-03-04 10:00 AM"
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "name": "Liam",
+        "vdu": "POOL-CONTROL",
+        "title": "Swimming Pool Sanitation - Chemical Imbalance",
+        "description": "The swimming pool sanitation system (System: POOL-CONTROL) is reporting chemical imbalances, risking water safety.",
+        "status": "Open",
+        "updates": [
+            {
+                "author": "TechTeam",
+                "message": "Calibrated chemical sensors. Imbalance persists.",
+                "timestamp": "2025-03-04 03:00 PM"
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "name": "Ella",
+        "vdu": "CCTV-SYSTEM",
+        "title": "CCTV & Security System - Camera Feed Corruption",
+        "description": "The CCTV system (System: CCTV-SYSTEM) is showing corrupted camera feeds, impacting security monitoring.",
+        "status": "In Progress",
+        "updates": [
+            {
+                "author": "TechTeam",
+                "message": "Replaced faulty camera cables. Corruption still occurring.",
+                "timestamp": "2025-03-05 11:00 AM"
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "name": "Noah",
+        "vdu": "CAFE-POS1",
+        "title": "Cafe POS System - Payment Processing Failure",
+        "description": "The cafe POS system (Machine: CAFE-POS1) is failing to process payments, causing delays in service.",
+        "status": "Open",
+        "updates": [
+            {
+                "author": "TechTeam",
+                "message": "Restarted the POS system. Payment processing still failing.",
+                "timestamp": "2025-03-05 02:30 PM"
             }
         ]
     }
