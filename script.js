@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    var tickets = [];
+
     // Function to generate ticket cards
     function generateTicketCards(tickets) {
         const container = $("#tickets-container");
@@ -59,25 +61,26 @@ $(document).ready(function () {
 
         $("#openTickets").empty();
         openTickets.forEach(ticket => {
-            $("#openTickets").append(`<li>${ticket.title}</li>`);
+            $("#openTickets").append(`<li>${ticket.vdu} - ${ticket.title}</li>`);
         });
 
         $("#inProgressTickets").empty();
         inProgressTickets.forEach(ticket => {
-            $("#inProgressTickets").append(`<li>${ticket.title}</li>`);
+            $("#inProgressTickets").append(`<li>${ticket.vdu} - ${ticket.title}</li>`);
         });
 
         $("#resolvedTickets").empty();
         resolvedTickets.forEach(ticket => {
-            $("#resolvedTickets").append(`<li>${ticket.title}</li>`);
+            $("#resolvedTickets").append(`<li>${ticket.vdu} - ${ticket.title}</li>`);
         });
     }
 
     fetch('tickets.json')
         .then(response => response.json())
         .then(data => {
-            generateTicketCards(data);
-            updateSidebarMenu(data);
+            tickets = data;
+            generateTicketCards(tickets);
+            updateSidebarMenu(tickets);
         })
         .catch(err => console.error(err));
 });

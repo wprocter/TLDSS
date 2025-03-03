@@ -1,74 +1,76 @@
-"id": 1,
-                    "name": "John",
-                    "vdu": "RECEPTION-PC1",
-                    "title": "Reception Computer 1 - Slow Performance",
-                    "description": "The reception computer (Machine: RECEPTION-PC1) frequently freezes and becomes unresponsive, causing delays in customer service.",
-                    "status": "Open",
-                    "updates": [
-                        {
-                            "author": "TechTeam",
-                            "message": "Restarted the computer and ran a virus scan. No issues found.",
-                            "timestamp": "2023-10-01 10:00 AM"
-                        },
-                        {
-                            "author": "TechTeam",
-                            "message": "Updated the system drivers. Monitoring for further issues.",
-                            "timestamp": "2023-10-01 11:30 AM"
-                        }
-                    ]
-                },
-                {
-                    "id": 2,
-                    "name": "Sarah",
-                    "vdu": "MANAGER-PC2",
-                    "title": "Managerial Computer 2 - Freezing Issues",
-                    "description": "The managerial computer (Machine: MANAGER-PC2) crashes multiple times a day, disrupting administrative tasks.",
-                    "status": "In Progress",
-                    "updates": [
-                        {
-                            "author": "TechTeam",
-                            "message": "Checked the event logs. No critical errors found.",
-                            "timestamp": "2023-10-01 09:00 AM"
-                        }
-                    ]
-                },
-                {
-                    "id": 3,
-                    "name": "Mike",
-                    "vdu": "RECEPTION-PC2",
-                    "title": "Reception Computer 2 - Frequent Freezing",
-                    "description": "The second reception computer (Machine: RECEPTION-PC2) experiences slow performance and freezes during peak hours.",
-                    "status": "Open",
-                    "updates": []
-                },
-                {
-                    "id": 4,
-                    "name": "Emma",
-                    "vdu": "MANAGER-PC1",
-                    "title": "Managerial Computer 1 - Crashes During Reports",
-                    "description": "The primary managerial computer (Machine: MANAGER-PC1) crashes when generating monthly reports, causing data loss.",
-                    "status": "In Progress",
-                    "updates": [
-                        {
-                            "author": "TechTeam",
-                            "message": "Reinstalled the reporting software. Issue persists.",
-                            "timestamp": "2023-10-01 02:00 PM"
-                        }
-                    ]
-                },
-                {
-                    "id": 5,
-                    "name": "David",
-                    "vdu": "RECEPTION-PC3",
-                    "title": "Reception Computer 3 - Unresponsive",
-                    "description": "The third reception computer (Machine: RECEPTION-PC3) becomes unresponsive after a few hours of use, requiring a restart.",
-                    "status": "Resolved",
-                    "updates": [
-                        {
-                            "author": "TechTeam",
-                            "message": "Replaced the faulty RAM. Issue resolved.",
-                            "timestamp": "2023-10-01 04:00 PM"
-                        }
-                    ]
-                }
-            ];
+[
+    {
+        "id": 1,
+        "name": "John",
+        "vdu": "RECEPTION-PC1",
+        "title": "Reception Computer 1 - Slow Performance",
+        "description": "The reception computer (Machine: RECEPTION-PC1) frequently freezes and becomes unresponsive, causing delays in customer service.",
+        "status": "Open",
+        "updates": [
+            {
+                "author": "TechTeam",
+                "message": "Restarted the computer and ran a virus scan. No issues found.",
+                "timestamp": "2023-10-01 10:00 AM"
+            },
+            {
+                "author": "TechTeam",
+                "message": "Updated the system drivers. Monitoring for further issues.",
+                "timestamp": "2023-10-01 11:30 AM"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Sarah",
+        "vdu": "MANAGER-PC2",
+        "title": "Managerial Computer 2 - Freezing Issues",
+        "description": "The managerial computer (Machine: MANAGER-PC2) crashes multiple times a day, disrupting administrative tasks.",
+        "status": "In Progress",
+        "updates": [
+            {
+                "author": "TechTeam",
+                "message": "Checked the event logs. No critical errors found.",
+                "timestamp": "2023-10-01 09:00 AM"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Mike",
+        "vdu": "RECEPTION-PC2",
+        "title": "Reception Computer 2 - Frequent Freezing",
+        "description": "The second reception computer (Machine: RECEPTION-PC2) experiences slow performance and freezes during peak hours.",
+        "status": "Open",
+        "updates": []
+    },
+    {
+        "id": 4,
+        "name": "Emma",
+        "vdu": "MANAGER-PC1",
+        "title": "Managerial Computer 1 - Crashes During Reports",
+        "description": "The primary managerial computer (Machine: MANAGER-PC1) crashes when generating monthly reports, causing data loss.",
+        "status": "In Progress",
+        "updates": [
+            {
+                "author": "TechTeam",
+                "message": "Reinstalled the reporting software. Issue persists.",
+                "timestamp": "2023-10-01 02:00 PM"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "David",
+        "vdu": "RECEPTION-PC3",
+        "title": "Reception Computer 3 - Unresponsive",
+        "description": "The third reception computer (Machine: RECEPTION-PC3) becomes unresponsive after a few hours of use, requiring a restart.",
+        "status": "Resolved",
+        "updates": [
+            {
+                "author": "TechTeam",
+                "message": "Replaced the faulty RAM. Issue resolved.",
+                "timestamp": "2023-10-01 04:00 PM"
+            }
+        ]
+    }
+]
