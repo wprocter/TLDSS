@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oakwood Leisure Centre - Scenario</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="my-4">
+            <h1 class="text-primary my-3 py-5 border-bottom border-primary">Oakwood Leisure Centre</h1>
+            <nav>
+                <a href="index.html" class="btn btn-primary">Home</a>
+                <a href="network.html" class="btn btn-primary">Network Overview</a>
+                <a href="scenario.html" class="btn btn-success">Scenario</a>
+                <a href="tasks.html" class="btn btn-primary">Tasks</a>
+                <a href="hd.html" class="btn btn-primary">Helpdesk</a>
+            </nav>
+        </header>
+        <section class="my-5 p-4">
+            <h2 class="text-primary m-3 p-3">Network Log file</h2>
+            <div class=" bg-light shadow rounded p-4">
+                <code>
+                    [10:35:22] ALERT: Unauthorized login attempt - Source: 103.45.67.89 -> Target: SENIOR-RECEPTION-PC1<br>
+                    [10:42:10] ALERT: Suspicious SSH connection - Source: 176.32.120.45 -> Target: MANAGER-PC1<br>
+                    [10:48:55] ALERT: High volume of outbound traffic - Source: CUSTOMER-WIFI -> Destination: 198.51.100.23<br>
+                    [10:55:30] ALERT: Firewall block - Unauthorized access attempt - Source: 175.45.176.10 -> Target: CCTV-SYSTEM<br>
+                    [11:05:47] ALERT: Unusual data transfer - Source: RECEPTION-PC1 -> Destination: 192.168.0.200<br>
+                    [11:10:30] ALERT: Multiple failed logins detected - Source: MANAGER-PC3 -> Target: HVAC-CONTROL<br>
+                    [11:15:02] ALERT: Data exfiltration attempt - Source: STAFF-WIFI -> Destination: 203.0.113.77<br>
+                    [11:22:45] INFO: Regular browsing activity - Source: CUSTOMER-WIFI -> Various web services<br>
+                    [11:30:33] INFO: Staff email accessed - Source: STAFF-WIFI -> Target: MAIL-SERVER<br>
+                    [11:35:55] ALERT: Attempted access to restricted admin panel - Source: VENDING-MACHINE-1 -> Target: MANAGER-PC2<br>
+                    [11:12:43] WARNING: Multiple failed login attempts detected - Source: SENIOR-RECEPTION-PC1 -> Target: MANAGER-PC2<br>
+                    [11:17:38] INFO: Elevated privileges granted - Source: MANAGER-PC1 -> Target: HVAC-CONTROL<br>
+                    [11:20:15] ALERT: Unusual script execution detected - Source: MAINTENANCE-PC1 -> Command: /bin/rootkit_scan.sh<br>
+                    [11:30:02] CRITICAL: Unauthorized firmware modification detected - Source: POOL-CONTROL<br>
+                    [11:35:22] ALERT: Unknown executable running - Source: RECEPTION-PC2 -> Process: unknown.exe<br>
+                    [11:40:10] ALERT: Suspicious system file changes - Source: MANAGER-PC1 -> Files: /etc/security/*<br>
+                    [11:42:33] WARNING: Credential dump attempt detected - Source: MAINTENANCE-PC1<br>
+                    [11:45:12] INFO: Routine system update - Source: MANAGER-PC2<br>
+                    [11:50:30] INFO: Scheduled HVAC adjustments applied - Source: HVAC-CONTROL<br>
+                    [11:55:45] ALERT: High CPU usage detected - Source: RECEPTION-PC3 -> Process: crypto_miner.exe<br>
+                    [11:45:00] ERROR: VENDING-MACHINE-1 unable to process transactions - Network timeout<br>
+                    [11:50:25] ERROR: HVAC-CONTROL failing to apply scheduled temperature changes<br>
+                    [11:55:43] ERROR: CCTV-SYSTEM unable to store footage - Disk corruption suspected<br>
+                    [12:02:15] ERROR: PRINTER-1 stuck in infinite print loop - Queued documents: 200+<br>
+                    [12:08:33] ERROR: CUSTOMER-WIFI bandwidth overutilized - 95% saturation detected<br>
+                    [12:15:50] ERROR: STAFF-WIFI critical error - Authentication system failing<br>
+                    [12:20:25] ERROR: RECEPTION-PC3 unexpected reboot triggered by unknown process<br>
+                    [12:25:40] INFO: Customer check-in successful - Source: RECEPTION-PC1<br>
+                    [12:30:12] INFO: Routine maintenance logs accessed - Source: MAINTENANCE-PC1<br>
+                    [12:35:55] ALERT: Unauthorized script modification detected - Source: RECEPTION-PC2 -> Process: modify_auth_log.sh<br>
+                    [12:40:10] ALERT: Unauthorized access to payroll system - Source: MANAGER-PC3 -> Target: PAYROLL-SERVER<br>
+                    [12:45:22] INFO: Regular backup completed - Source: MANAGER-PC1 -> Target: BACKUP-SERVER<br>
+                    [12:50:33] ALERT: Unusual network activity - Source: STAFF-WIFI -> Destination: 192.168.1.100<br>
+                    [12:55:45] WARNING: High memory usage detected - Source: RECEPTION-PC1 -> Process: chrome.exe<br>
+                    [13:00:10] ALERT: Unauthorized access attempt - Source: 203.0.113.45 -> Target: SENIOR-RECEPTION-PC1<br>
+                    [13:05:22] INFO: Staff Wi-Fi reconnected - Source: STAFF-WIFI<br>
+                    [13:10:33] ALERT: Suspicious file download - Source: CUSTOMER-WIFI -> File: malware.exe<br>
+                    [13:15:45] ERROR: HVAC-CONTROL unable to communicate with sensors - Network timeout<br>
+                    [13:20:10] ALERT: Unauthorized access to CCTV feeds - Source: 192.168.0.50 -> Target: CCTV-SYSTEM<br>
+                    [13:25:22] INFO: Routine system scan completed - Source: MAINTENANCE-PC1<br>
+                    [13:30:33] ALERT: Unusual database query detected - Source: MANAGER-PC2 -> Target: MEMBERSHIP-DB<br>
+                    [13:35:45] WARNING: High disk usage detected - Source: RECEPTION-PC3 -> Process: backup_service.exe<br>
+                    [13:40:10] ALERT: Unauthorized access to admin panel - Source: 203.0.113.77 -> Target: MANAGER-PC1<br>
+                    [13:45:22] INFO: Staff email sent - Source: STAFF-WIFI -> Target: MAIL-SERVER<br>
+                    [13:50:33] ALERT: Unusual outbound traffic - Source: VENDING-MACHINE-1 -> Destination: 198.51.100.23<br>
+                    [13:55:45] ERROR: POOL-CONTROL unable to regulate chemical levels - System error<br>
+                    [14:00:10] ALERT: Unauthorized access to maintenance logs - Source: 192.168.0.100 -> Target: MAINTENANCE-PC1<br>
+                    [14:05:22] INFO: Customer Wi-Fi reconnected - Source: CUSTOMER-WIFI<br>
+                    [14:10:33] ALERT: Suspicious process running - Source: RECEPTION-PC2 -> Process: keylogger.exe<br>
+                    [14:15:45] WARNING: High CPU usage detected - Source: MANAGER-PC3 -> Process: unknown.exe<br>
+                    [14:20:10] ALERT: Unauthorized access to payroll data - Source: 203.0.113.45 -> Target: PAYROLL-SERVER<br>
+                    [14:25:22] INFO: Routine system update completed - Source: MANAGER-PC1<br>
+                    [14:30:33] ALERT: Unusual network activity - Source: STAFF-WIFI -> Destination: 192.168.1.200<br>
+                    [14:35:45] ERROR: CCTV-SYSTEM unable to retrieve live feeds - Network error<br>
+                    [14:40:10] ALERT: Unauthorized access to HVAC controls - Source: 192.168.0.150 -> Target: HVAC-CONTROL<br>
+                    [14:45:22] INFO: Staff Wi-Fi reconnected - Source: STAFF-WIFI<br>
+                    [14:50:33] ALERT: Suspicious file download - Source: CUSTOMER-WIFI -> File: exploit.exe<br>
+                    [14:55:45] ERROR: HVAC-CONTROL unable to communicate with sensors - Network timeout<br>
+                    [15:00:10] ALERT: Unauthorized access to CCTV feeds - Source: 192.168.0.50 -> Target: CCTV-SYSTEM<br>
+                    [15:05:22] INFO: Routine system scan completed - Source: MAINTENANCE-PC1<br>
+                    [15:10:33] ALERT: Unusual database query detected - Source: MANAGER-PC2 -> Target: MEMBERSHIP-DB<br>
+                    [15:15:45] WARNING: High disk usage detected - Source: RECEPTION-PC3 -> Process: backup_service.exe<br>
+                    [15:20:10] ALERT: Unauthorized access to admin panel - Source: 203.0.113.77 -> Target: MANAGER-PC1<br>
+                    [15:25:22] INFO: Staff email sent - Source: STAFF-WIFI -> Target: MAIL-SERVER<br>
+                    [15:30:33] ALERT: Unusual outbound traffic - Source: VENDING-MACHINE-1 -> Destination: 198.51.100.23<br>
+                    [15:35:45] ERROR: POOL-CONTROL unable to regulate chemical levels - System error<br>
+                    [15:40:10] ALERT: Unauthorized access to maintenance logs - Source: 192.168.0.100 -> Target: MAINTENANCE-PC1<br>
+                    [15:45:22] INFO: Customer Wi-Fi reconnected - Source: CUSTOMER-WIFI<br>
+                    [15:50:33] ALERT: Suspicious process running - Source: RECEPTION-PC2 -> Process: keylogger.exe<br>
+                    [15:55:45] WARNING: High CPU usage detected - Source: MANAGER-PC3 -> Process: unknown.exe<br>
+                    </code>
+            </div>
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+    </html>
