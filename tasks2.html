@@ -3,6 +3,12 @@
 <head>
 <script src="js/header.js"></script>
     <title>Oakwood Leisure Centre - Advanced Tasks</title>
+<script>
+// Redirect if not authorized
+if (sessionStorage.getItem("advancedAccess") !== "true") {
+    window.location.href = "tasks.html";
+}
+</script>
  </head>
  
  <body>
