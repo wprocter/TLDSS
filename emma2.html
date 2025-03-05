@@ -3,6 +3,12 @@
 <head>
 <script src="js/header.js"></script>
     <title>Emma's New Statement</title>
+    <script>
+        // Redirect if not authorized
+        if (sessionStorage.getItem("advancedAccess") !== "true") {
+            window.location.href = "emma.html";
+        }
+        </script>
  </head>
 <body>
     <div class="container">
