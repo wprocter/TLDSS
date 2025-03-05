@@ -100,3 +100,15 @@ ul.list-unstyled li:last-child {
 .status-resolved {
     background-color: #28a745;
 }
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f4f4f4;
+}

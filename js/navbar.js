@@ -2,9 +2,9 @@
     const navbarHtml = `
         <nav>
             <a href="index.html" class="btn btn-primary">Home</a>
-            <a href="network.html" class="btn btn-primary">Network Overview</a>
             <a href="scenario.html" class="btn btn-primary">Scenario</a>
             <a href="tasks.html" class="btn btn-primary">Tasks</a>
+            <a href="network.html" class="btn btn-primary">Network Overview</a>
             <a href="hd.html" class="btn btn-primary">Helpdesk</a>
         </nav>
     `;
