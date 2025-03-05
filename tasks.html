@@ -49,7 +49,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="js/navbar.js"></script>
 <script>
-// Function to compute SHA-256 hash of a string
 async function hashString(str) {
     const encoder = new TextEncoder();
     const data = encoder.encode(str);
@@ -58,13 +57,11 @@ async function hashString(str) {
     return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
 }
 
-// Precomputed hash for the correct password ("Security1")
 const correctHash = "00225b3d0d8dd59287998962ba4bd9e01f6e8b7314d806474de84062e2c527fd";
 
 document.getElementById("passwordBtn").addEventListener("click", async function(){
     const input = document.getElementById("passwordInput").value.trim(); // trim input
     const inputHash = await hashString(input);
-    // For debugging, alert the expected hash (remove this in production)
     if(inputHash === correctHash) {
          sessionStorage.setItem("advancedAccess", "true");
          document.getElementById("secretLink").style.display = "block";
