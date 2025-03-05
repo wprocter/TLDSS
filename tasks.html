@@ -62,8 +62,10 @@ async function hashString(str) {
 const correctHash = "4f61e925de93ac1ac734cc8b311922fa9cb4c6934681ee70e3e991e7b1f171a9";
 
 document.getElementById("passwordBtn").addEventListener("click", async function(){
-    const input = document.getElementById("passwordInput").value;
+    const input = document.getElementById("passwordInput").value.trim(); // trim input
     const inputHash = await hashString(input);
+    // Debug line - remove this in production
+    console.log("Computed hash:", inputHash); 
     if(inputHash === correctHash) {
          sessionStorage.setItem("advancedAccess", "true");
          document.getElementById("secretLink").style.display = "block";
