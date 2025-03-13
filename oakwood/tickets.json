@@ -1,0 +1,580 @@
+[
+    {
+        "id": 1,
+        "name": "John",
+        "vdu": "RECEPTION-PC1",
+        "title": "Reception Computer 1 - Slow Performance",
+        "description": "The reception computer (Machine: RECEPTION-PC1) frequently freezes and becomes unresponsive, causing delays in customer service.",
+        "status": "Open",
+        "methodOfContact": "Telephone",
+        "createdDateTime": "2025-02-28 09:00 AM",
+        "updates": [
+            {
+                "author": "TechTeam",
+                "message": "Restarted the computer and ran a virus scan. No issues found.",
+                "timestamp": "2025-02-28 10:00 AM"
+            },
+            {
+                "author": "TechTeam",
+                "message": "Updated the system drivers. Monitoring for further issues.",
+                "timestamp": "2025-02-28 11:30 AM"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Sarah",
+        "vdu": "MANAGER-PC2",
+        "title": "Managerial Computer 2 - Freezing Issues",
+        "description": "The managerial computer (Machine: MANAGER-PC2) crashes multiple times a day, disrupting administrative tasks.",
+        "status": "In Progress",
+        "methodOfContact": "Email",
+        "createdDateTime": "2025-02-28 08:30 AM",
+        "updates": [
+            {
+                "author": "TechTeam",
+                "message": "Checked the event logs. No critical errors found.",
+                "timestamp": "2025-02-28 09:00 AM"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Mike",
+        "vdu": "RECEPTION-PC2",
+        "title": "Reception Computer 2 - Frequent Freezing",
+        "description": "The second reception computer (Machine: RECEPTION-PC2) experiences slow performance and freezes during peak hours.",
+        "status": "Open",
+        "methodOfContact": "In Person",
+        "createdDateTime": "2025-02-28 10:15 AM",
+        "updates": []
+    },
+    {
+        "id": 4,
+        "name": "Emma",
+        "vdu": "MANAGER-PC1",
+        "title": "Managerial Computer 1 - Crashes During Reports",
+        "description": "The primary managerial computer (Machine: MANAGER-PC1) crashes when generating monthly reports, causing data loss.",
+        "status": "In Progress",
+        "methodOfContact": "Web Form",
+        "createdDateTime": "2025-02-28 01:45 PM",
+        "updates": [
+            {
+                "author": "TechTeam",
+                "message": "Reinstalled the reporting software. Issue persists.",
+                "timestamp": "2025-02-28 02:00 PM"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "David",
+        "vdu": "RECEPTION-PC3",
+        "title": "Reception Computer 3 - Unresponsive",
+        "description": "The third reception computer (Machine: RECEPTION-PC3) becomes unresponsive after a few hours of use, requiring a restart.",
+        "status": "Resolved",
+        "methodOfContact": "Telephone",
+        "createdDateTime": "2025-02-28 03:30 PM",
+        "updates": [
+            {
+                "author": "TechTeam",
+                "message": "Replaced the faulty RAM. Issue resolved.",
+                "timestamp": "2025-02-28 04:00 PM"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Laura",
+        "vdu": "SENIOR-RECEPTION-PC1",
+        "title": "Senior Receptionist Terminal - Unauthorized Transactions",
+        "description": "The senior receptionist terminal (Machine: SENIOR-RECEPTION-PC1) is showing unauthorized financial transactions in the membership system.",
+        "status": "Open",
+        "methodOfContact": "Email",
+        "createdDateTime": "2025-03-01 08:45 AM",
+        "updates": [
+            {
+                "author": "TechTeam",
+                "message": "Reviewed transaction logs. No unusual activity detected.",
+                "timestamp": "2025-03-01 09:15 AM"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "James",
+        "vdu": "MANAGER-PC3",
+        "title": "Managerial Office Workstation - Payroll Errors",
+        "description": "The managerial workstation (Machine: MANAGER-PC3) is generating incorrect payroll calculations, causing discrepancies in employee payments.",
+        "status": "In Progress",
+        "methodOfContact": "Web Form",
+        "createdDateTime": "2025-03-01 11:00 AM",
+        "updates": [
+            {
+                "author": "TechTeam",
+                "message": "Audited payroll software. No configuration errors found.",
+                "timestamp": "2025-03-01 11:45 AM"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Sophie",
+        "vdu": "MAINTENANCE-PC1",
+        "title": "Maintenance System - Security Camera Feed Lost",
+        "description": "The maintenance system (Machine: MAINTENANCE-PC1) has lost access to the security camera feeds, impacting monitoring capabilities.",
+        "status": "Open",
+        "methodOfContact": "Telephone",
+        "createdDateTime": "2025-03-02 09:30 AM",
+        "updates": [
+            {
+                "author": "TechTeam",
+                "message": "Restarted the camera server. Feeds still unavailable.",
+                "timestamp": "2025-03-02 10:30 AM"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Oliver",
+        "vdu": "CUSTOMER-WIFI",
+        "title": "Customer Wi-Fi Network - Intermittent Connectivity",
+        "description": "The customer Wi-Fi network (Network: CUSTOMER-WIFI) is experiencing intermittent connectivity, causing complaints from visitors.",
+        "status": "Open",
+        "methodOfContact": "In Person",
+        "createdDateTime": "2025-03-02 01:15 PM",
+        "updates": [
+            {
+                "author": "TechTeam",
+                "message": "Rebooted the Wi-Fi router. Issue persists.",
+                "timestamp": "2025-03-02 02:00 PM"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Emily",
+        "vdu": "STAFF-WIFI",
+        "title": "Staff Wi-Fi Network - Email Access Issues",
+        "description": "The staff Wi-Fi network (Network: STAFF-WIFI) is preventing access to staff email and internal communication systems.",
+        "status": "In Progress",
+        "methodOfContact": "Email",
+        "createdDateTime": "2025-03-03 08:30 AM",
+        "updates": [
+            {
+                "author": "TechTeam",
+                "message": "Checked network configuration. No issues found.",
+                "timestamp": "2025-03-03 09:00 AM"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "name": "Daniel",
+        "vdu": "VENDING-MACHINE-1",
+        "title": "Integrated Vending Machine - Stock Monitoring Failure",
+        "description": "The integrated vending machine (Machine: VENDING-MACHINE-1) is not reporting stock levels, causing inventory management issues.",
+        "status": "Open",
+        "methodOfContact": "Web Form",
+        "createdDateTime": "2025-03-03 12:00 PM",
+        "updates": [
+            {
+                "author": "TechTeam",
+                "message": "Restarted the vending machine. Stock monitoring still offline.",
+                "timestamp": "2025-03-03 01:00 PM"
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "name": "Charlotte",
+        "vdu": "HVAC-CONTROL",
+        "title": "HVAC Control System - Temperature Fluctuations",
+        "description": "The HVAC control system (System: HVAC-CONTROL) is causing temperature fluctuations across the leisure center, leading to discomfort.",
+        "status": "In Progress",
+        "methodOfContact": "Telephone",
+        "createdDateTime": "2025-03-04 09:00 AM",
+        "updates": [
+            {
+                "author": "TechTeam",
+                "message": "Adjusted temperature settings. Issue not resolved.",
+                "timestamp": "2025-03-04 10:00 AM"
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "name": "Liam",
+        "vdu": "POOL-CONTROL",
+        "title": "Swimming Pool Sanitation - Chemical Imbalance",
+        "description": "The swimming pool sanitation system (System: POOL-CONTROL) is reporting chemical imbalances, risking water safety.",
+        "status": "Open",
+        "methodOfContact": "In Person",
+        "createdDateTime": "2025-03-04 02:30 PM",
+        "updates": [
+            {
+                "author": "TechTeam",
+                "message": "Calibrated chemical sensors. Imbalance persists.",
+                "timestamp": "2025-03-04 03:00 PM"
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "name": "Ella",
+        "vdu": "CCTV-SYSTEM",
+        "title": "CCTV & Security System - Camera Feed Corruption",
+        "description": "The CCTV system (System: CCTV-SYSTEM) is showing corrupted camera feeds, impacting security monitoring.",
+        "status": "In Progress",
+        "methodOfContact": "Email",
+        "createdDateTime": "2025-03-05 10:00 AM",
+        "updates": [
+            {
+                "author": "TechTeam",
+                "message": "Replaced faulty camera cables. Corruption still occurring.",
+                "timestamp": "2025-03-05 11:00 AM"
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "name": "Noah",
+        "vdu": "CAFE-POS1",
+        "title": "Cafe POS System - Payment Processing Failure",
+        "description": "The cafe POS system (Machine: CAFE-POS1) is failing to process payments, causing delays in service.",
+        "status": "Open",
+        "methodOfContact": "Web Form",
+        "createdDateTime": "2025-03-05 01:45 PM",
+        "updates": [
+            {
+                "author": "TechTeam",
+                "message": "Restarted the POS system. Payment processing still failing.",
+                "timestamp": "2025-03-05 02:30 PM"
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "name": "Grace",
+        "vdu": "ID-CAMERA-1",
+        "title": "ID Camera - Blurry Images",
+        "description": "The ID camera (Machine: ID-CAMERA-1) is capturing blurry images, making identification difficult.",
+        "status": "Resolved",
+        "methodOfContact": "Telephone",
+        "createdDateTime": "2025-01-15 10:00 AM",
+        "updates": [
+            {
+                "author": "TechTeam",
+                "message": "Cleaned the camera lens. Issue resolved.",
+                "timestamp": "2025-01-15 11:00 AM"
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "name": "Harry",
+        "vdu": "PRINTER-1",
+        "title": "Printer - Paper Jams",
+        "description": "The office printer (Machine: PRINTER-1) is frequently jamming, causing delays in document printing.",
+        "status": "Resolved",
+        "methodOfContact": "In Person",
+        "createdDateTime": "2025-01-20 02:00 PM",
+        "updates": [
+            {
+                "author": "TechTeam",
+                "message": "Replaced the paper tray. Issue resolved.",
+                "timestamp": "2025-01-20 03:00 PM"
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "name": "Sophia",
+        "vdu": "ID-CAMERA-2",
+        "title": "ID Camera - No Signal",
+        "description": "The ID camera (Machine: ID-CAMERA-2) is not transmitting any signal, impacting security checks.",
+        "status": "In Progress",
+        "methodOfContact": "Email",
+        "createdDateTime": "2025-02-10 09:00 AM",
+        "updates": [
+            {
+                "author": "TechTeam",
+                "message": "Checked the camera connection. No signal detected.",
+                "timestamp": "2025-02-10 10:00 AM"
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "name": "Lucas",
+        "vdu": "PRINTER-2",
+        "title": "Printer - Toner Low",
+        "description": "The office printer (Machine: PRINTER-2) is displaying a low toner warning, affecting print quality.",
+        "status": "In Progress",
+        "methodOfContact": "Web Form",
+        "createdDateTime": "2025-02-12 11:00 AM",
+        "updates": [
+            {
+                "author": "TechTeam",
+                "message": "Ordered replacement toner. Awaiting delivery.",
+                "timestamp": "2025-02-12 12:00 PM"
+            }
+        ]
+    },
+        
+        {
+            "id": 20,
+            "name": "Ethan",
+            "vdu": "RECEPTION-PC1",
+            "title": "Reception Computer 1 - Keyboard Not Working",
+            "description": "The keyboard on the reception computer (Machine: RECEPTION-PC1) is unresponsive, preventing data entry.",
+            "status": "Resolved",
+            "methodOfContact": "Telephone",
+            "createdDateTime": "2025-02-25 09:00 AM",
+            "updates": [
+                {
+                    "author": "TechTeam",
+                    "message": "Replaced the keyboard. Issue resolved.",
+                    "timestamp": "2025-02-25 10:00 AM"
+                }
+            ]
+        },
+        {
+            "id": 21,
+            "name": "Mia",
+            "vdu": "MANAGER-PC2",
+            "title": "Managerial Computer 2 - Monitor Flickering",
+            "description": "The monitor on the managerial computer (Machine: MANAGER-PC2) is flickering, causing eye strain.",
+            "status": "Resolved",
+            "methodOfContact": "Email",
+            "createdDateTime": "2025-02-24 02:00 PM",
+            "updates": [
+                {
+                    "author": "TechTeam",
+                    "message": "Replaced the monitor. Issue resolved.",
+                    "timestamp": "2025-02-24 03:00 PM"
+                }
+            ]
+        },
+        {
+            "id": 22,
+            "name": "Amelia",
+            "vdu": "RECEPTION-PC2",
+            "title": "Reception Computer 2 - Mouse Not Working",
+            "description": "The mouse on the reception computer (Machine: RECEPTION-PC2) is not functioning, hindering navigation.",
+            "status": "Resolved",
+            "methodOfContact": "In Person",
+            "createdDateTime": "2025-02-23 11:00 AM",
+            "updates": [
+                {
+                    "author": "TechTeam",
+                    "message": "Replaced the mouse. Issue resolved.",
+                    "timestamp": "2025-02-23 12:00 PM"
+                }
+            ]
+        },
+        {
+            "id": 23,
+            "name": "Logan",
+            "vdu": "MANAGER-PC1",
+            "title": "Managerial Computer 1 - External Drive Not Recognized",
+            "description": "The external drive connected to the managerial computer (Machine: MANAGER-PC1) is not being recognized.",
+            "status": "Resolved",
+            "methodOfContact": "Web Form",
+            "createdDateTime": "2025-02-22 10:00 AM",
+            "updates": [
+                {
+                    "author": "TechTeam",
+                    "message": "Updated USB drivers. Issue resolved.",
+                    "timestamp": "2025-02-22 11:00 AM"
+                }
+            ]
+        },
+        {
+            "id": 24,
+            "name": "Evelyn",
+            "vdu": "RECEPTION-PC3",
+            "title": "Reception Computer 3 - Printer Connection Lost",
+            "description": "The reception computer (Machine: RECEPTION-PC3) has lost connection to the shared printer.",
+            "status": "Resolved",
+            "methodOfContact": "Telephone",
+            "createdDateTime": "2025-02-21 03:00 PM",
+            "updates": [
+                {
+                    "author": "TechTeam",
+                    "message": "Reconnected the printer. Issue resolved.",
+                    "timestamp": "2025-02-21 04:00 PM"
+                }
+            ]
+        },
+        {
+            "id": 25,
+            "name": "Lucas",
+            "vdu": "SENIOR-RECEPTION-PC1",
+            "title": "Senior Receptionist Terminal - Software Crash",
+            "description": "The membership management software on the senior receptionist terminal (Machine: SENIOR-RECEPTION-PC1) crashes frequently.",
+            "status": "Resolved",
+            "methodOfContact": "Email",
+            "createdDateTime": "2025-02-20 09:30 AM",
+            "updates": [
+                {
+                    "author": "TechTeam",
+                    "message": "Reinstalled the software. Issue resolved.",
+                    "timestamp": "2025-02-20 10:30 AM"
+                }
+            ]
+        },
+        {
+            "id": 26,
+            "name": "Harper",
+            "vdu": "MANAGER-PC3",
+            "title": "Managerial Office Workstation - Network Dropouts",
+            "description": "The managerial workstation (Machine: MANAGER-PC3) is experiencing frequent network dropouts, disrupting work.",
+            "status": "In Progress",
+            "methodOfContact": "Web Form",
+            "createdDateTime": "2025-02-19 01:00 PM",
+            "updates": [
+                {
+                    "author": "TechTeam",
+                    "message": "Checked network cables. No issues found.",
+                    "timestamp": "2025-02-19 02:00 PM"
+                }
+            ]
+        },
+        {
+            "id": 27,
+            "name": "Mason",
+            "vdu": "MAINTENANCE-PC1",
+            "title": "Maintenance System - Door Control Failure",
+            "description": "The maintenance system (Machine: MAINTENANCE-PC1) is unable to control the automatic doors, causing access issues.",
+            "status": "In Progress",
+            "methodOfContact": "Telephone",
+            "createdDateTime": "2025-02-18 10:00 AM",
+            "updates": [
+                {
+                    "author": "TechTeam",
+                    "message": "Restarted the door control module. Issue persists.",
+                    "timestamp": "2025-02-18 11:00 AM"
+                }
+            ]
+        },
+        {
+            "id": 28,
+            "name": "Ella",
+            "vdu": "CUSTOMER-WIFI",
+            "title": "Customer Wi-Fi Network - Slow Speeds",
+            "description": "The customer Wi-Fi network (Network: CUSTOMER-WIFI) is running at very slow speeds, causing frustration among visitors.",
+            "status": "Open",
+            "methodOfContact": "In Person",
+            "createdDateTime": "2025-02-17 02:00 PM",
+            "updates": [
+                {
+                    "author": "TechTeam",
+                    "message": "Checked router settings. No configuration issues found.",
+                    "timestamp": "2025-02-17 03:00 PM"
+                }
+            ]
+        },
+        {
+            "id": 29,
+            "name": "Aiden",
+            "vdu": "STAFF-WIFI",
+            "title": "Staff Wi-Fi Network - Intermittent Access",
+            "description": "The staff Wi-Fi network (Network: STAFF-WIFI) is intermittently losing connection, disrupting work.",
+            "status": "In Progress",
+            "methodOfContact": "Email",
+            "createdDateTime": "2025-02-16 09:00 AM",
+            "updates": [
+                {
+                    "author": "TechTeam",
+                    "message": "Rebooted the access points. Issue persists.",
+                    "timestamp": "2025-02-16 10:00 AM"
+                }
+            ]
+        },
+        {
+            "id": 30,
+            "name": "Scarlett",
+            "vdu": "VENDING-MACHINE-1",
+            "title": "Integrated Vending Machine - Payment Failure",
+            "description": "The integrated vending machine (Machine: VENDING-MACHINE-1) is failing to process card payments.",
+            "status": "Open",
+            "methodOfContact": "Web Form",
+            "createdDateTime": "2025-02-15 11:00 AM",
+            "updates": [
+                {
+                    "author": "TechTeam",
+                    "message": "Restarted the payment module. Issue persists.",
+                    "timestamp": "2025-02-15 12:00 PM"
+                }
+            ]
+        },
+        {
+            "id": 31,
+            "name": "Jackson",
+            "vdu": "HVAC-CONTROL",
+            "title": "HVAC Control System - Fan Noise",
+            "description": "The HVAC control system (System: HVAC-CONTROL) is producing loud fan noises, causing discomfort.",
+            "status": "In Progress",
+            "methodOfContact": "Telephone",
+            "createdDateTime": "2025-02-14 03:00 PM",
+            "updates": [
+                {
+                    "author": "TechTeam",
+                    "message": "Inspected the fan. No obvious issues found.",
+                    "timestamp": "2025-02-14 04:00 PM"
+                }
+            ]
+        },
+        {
+            "id": 32,
+            "name": "Lily",
+            "vdu": "POOL-CONTROL",
+            "title": "Swimming Pool Sanitation - Pump Failure",
+            "description": "The swimming pool sanitation system (System: POOL-CONTROL) is reporting a pump failure, risking water quality.",
+            "status": "Open",
+            "methodOfContact": "In Person",
+            "createdDateTime": "2025-02-13 10:00 AM",
+            "updates": [
+                {
+                    "author": "TechTeam",
+                    "message": "Restarted the pump. Issue persists.",
+                    "timestamp": "2025-02-13 11:00 AM"
+                }
+            ]
+        },
+        {
+            "id": 33,
+            "name": "Liam",
+            "vdu": "CCTV-SYSTEM",
+            "title": "CCTV & Security System - Recording Failure",
+            "description": "The CCTV system (System: CCTV-SYSTEM) is failing to record footage, impacting security.",
+            "status": "In Progress",
+            "methodOfContact": "Email",
+            "createdDateTime": "2025-02-12 09:00 AM",
+            "updates": [
+                {
+                    "author": "TechTeam",
+                    "message": "Checked storage settings. No issues found.",
+                    "timestamp": "2025-02-12 10:00 AM"
+                }
+            ]
+        },
+        {
+            "id": 34,
+            "name": "Chloe",
+            "vdu": "CAFE-POS1",
+            "title": "Cafe POS System - Receipt Printer Jam",
+            "description": "The cafe POS system (Machine: CAFE-POS1) has a jammed receipt printer, causing delays in service.",
+            "status": "Resolved",
+            "methodOfContact": "Web Form",
+            "createdDateTime": "2025-02-11 02:00 PM",
+            "updates": [
+                {
+                    "author": "TechTeam",
+                    "message": "Cleared the paper jam. Issue resolved.",
+                    "timestamp": "2025-02-11 03:00 PM"
+                }
+            ]
+        }
+    ]
