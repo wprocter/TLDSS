@@ -5,7 +5,7 @@
 </head>
 <body>
     <div class="container mt-5">
-        <h1 class="text-danger p-3 m-4 border rounded-5 shadow col-3 text-center bg-danger-subtle">Fitness<i class="fa-regular fa-square-plus"></i></h1>
+        <h1 class="text-success p-3 m-4 border rounded-5 shadow col-3 text-center bg-success-subtle">CloudVault<i class="fa-solid fa-cloud-bolt"></i></h1>
         
         <div class="alert alert-primary" role="alert">
             <h4 class="alert-heading">Introduction</h4>
@@ -18,13 +18,13 @@
 
         <div class="alert alert-light" role="alert">
             <h4 class="alert-heading">Overview of the situation</h4>
-            <p>Fitness+, suffered a major cybersecurity breach exposing 50,000 customer records. Hackers gained access via an unpatched web application vulnerability and a series of phishing emails targeting junior staff. The compromised data includes membership details, personal information, and limited financial records, though payment details remain encrypted. The company’s cybersecurity policies were outdated, and a lack of multi-factor authentication (MFA) allowed unauthorized access to senior accounts.</p>
-            <p>The attackers remained undetected for over six months, during which they exfiltrated HR records and planted malware that could have enabled future attacks. The company failed to notify the Information Commissioner's Office (ICO) within 72 hours, potentially violating GDPR.</p>
-            <p>An internal investigation revealed serious compliance failures, a lack of staff training, and third-party supplier vulnerabilities. Customers are furious, demanding compensation, and some have already launched a class-action lawsuit.</p>
+            <p>CloudVault, a data storage provider for multiple businesses, suffered a catastrophic ransomware attack that locked critical business and customer files. The attackers exploited a zero-day vulnerability in the cloud infrastructure, allowing them to encrypt all company and client data. A Bitcoin ransom was demanded in exchange for a decryption key.</p>
+            <p>The breach was compounded by poor cybersecurity policies—CloudVault had no network segmentation, meaning attackers moved laterally across all connected systems. Additionally, a former employee’s account had not been deactivated, providing another attack vector.</p>
+            <p>Sensitive HR and legal documents were leaked onto the dark web, and the attackers publicly defaced the company website. A major law firm representing clients affected by the breach has started an investigation into CloudVault’s compliance failures under GDPR and data protection laws.</p>
             <hr>
             <h4 class="alert-heading">Cover Story</h4>
-            <p>Fitness+ is minimizing the breach's severity, stating that only "some" customer data was accessed, and no financial data was compromised. They are framing this as an isolated incident due to a rogue third-party supplier and claiming immediate steps were taken to secure the system.</p>
-            <p>Internally, however, panic is setting in. The PR team is struggling with customer backlash, the DPO (Data Protection Officer) was informed too late, and IT staff are under pressure to fix security gaps while avoiding blame.</p>
+            <p>CloudVault is downplaying the attack, stating that a “temporary service outage” occurred due to unexpected system maintenance. They insist that "customer data integrity remains a priority", while secretly negotiating with cyber insurance providers about whether to pay the ransom.</p>
+            <p>Meanwhile, internal chaos is unfolding—executives are scrambling for legal cover, the CISO (Chief Information Security Officer) has resigned, and regulators are closing in. Clients are furious and threatening lawsuits. The ICO is investigating, and fines could reach millions.</p>
         </div>
 
     </div>
@@ -37,13 +37,13 @@
                         <h4>Company Overview</h4>
                     </div>
                     <div class="card-body">
-                        <h4><strong>Company Name:</strong> Fitness+</h4>
-                        <h4><strong>Industry:</strong> Health &amp; Wellness</h4>
+                        <h4><strong>Company Name:</strong> CloudVault</h4>
+                        <h4><strong>Industry:</strong> Data Storage</h4>
                         <h4><strong>Headquarters:</strong> London, UK</h4>
-                        <h4><strong>Founded:</strong> 2005</h4>
-                        <h4><strong>Locations:</strong> 50+ gyms across the UK</h4>
-                        <h4><strong>Services:</strong> Gym memberships, personal training, fitness classes, wellness programs</h4>
-                        <h4><strong>Customers:</strong> 100,000+ members</h4>
+                        <h4><strong>Founded:</strong> 2010</h4>
+                        <h4><strong>Locations:</strong> Data centers in US, Europe, Asia</h4>
+                        <h4><strong>Services:</strong> Cloud storage, data backup, disaster recovery</h4>
+                        <h4><strong>Customers:</strong> 500+ businesses worldwide</h4>
                     </div>
                 </div>
                 <div class="card">
@@ -51,17 +51,12 @@
                         <h4>Equipment Overview</h4>
                     </div>
                     <ul>
-                        <li><strong>Web Servers</strong>
-                            <ul>
-                                <li><strong>Web Server</strong>: Apache HTTP Server, Ubuntu 20.04 LTS</li>
-                                <li><strong>Database Server</strong>: MySQL 6.0, Ubuntu 20.04 LTS</li>
-                            </ul></li>
-                        <li><strong>Reception Terminals</strong>: Dell OptiPlex 7090, running Windows 11 Pro, with biometric access</li>
-                        <li><strong>Manager Workstations</strong>: HP EliteBook 850 G8, Windows 11, encrypted storage</li>
-                        <li><strong>CCTV Server</strong>: Dell PowerEdge R650, RAID 10 Storage, Linux-based NVR</li>
-                        <li><strong>Cloud Services</strong>: Microsoft Azure for Office, backups, AWS EC2 for member databases</li>
-                        <li><strong>Wi-Fi Security</strong>: WPA3 Enterprise authentication for staff, WPA2 for guest network</li>
-                    </ul>
+                        <li><strong>Client Storage Servers</strong>: Dell EMC PowerScale F900, SSD-based, redundant arrays</li>
+                        <li><strong>Security Monitoring</strong>: Cisco SecureX with SIEM integration for threat detection</li>
+                        <li><strong>Employee Workstations</strong>: Lenovo ThinkPad X1 Carbon, BitLocker encryption, 2FA</li>
+                        <li><strong>Backup &amp; Compliance Servers</strong>: IBM Power Systems, AI-driven ransomware detection</li>
+                        <li><strong>Firewall &amp; Perimeter Security</strong>: Cisco Firepower with custom ACLs, Zero Trust Architecture</li>
+                        </ul>
                 </div>
             </div>
             <div class="col-md-6">
@@ -73,37 +68,45 @@
                         
                     <h4><strong>Company Staff Structure</strong></h4>
                     <ol>
-                        <li><strong>Chief Executive Officer (CEO)</strong> – Oversees company strategy and growth.</li>
-                        <li><strong>Chief Technology Officer (CTO)</strong> – Manages IT infrastructure, cybersecurity, and digital strategy.</li>
-                        <li><strong>Chief Financial Officer (CFO)</strong> – Handles financial operations, including transactions and compliance.</li>
-                        <li><strong>Chief Operations Officer (COO)</strong> – Responsible for gym operations, customer services and HR.
+                        <li><strong>Chief Executive Officer (CEO)</strong> – Leads company vision, investor relations, and strategic growth.</li>
+                        <li><strong>Chief Information Security Officer (CISO)</strong> – Directs cybersecurity policies and compliance.</li>
+                        <li><strong>Chief Operations Officer (COO)</strong> – Handles financial operations, compliance, Sales and HR.
+                            <ul><li><strong>Legal &amp; Compliance Team</strong>
+                                <ul>
+                                    <li><strong>Data Protection Officer (DPO)</strong> – Ensures compliance with GDPR and data security policies.</li>
+                                    <li><strong>Compliance Manager</strong> – Manages adherence to regulations and internal policies.</li>
+                                    <li><strong>HR Manager</strong> – Manages all people related matters</li>
+                                </ul>
+                            </ul>
+                            <ul><li><strong>Customer Support &amp; Operations</strong>
+                                <ul>
+                                    <li><strong>Technical Account Managers</strong> – Handle client relations and issue resolution.</li>
+                                    <li><strong>Helpdesk &amp; IT Support</strong> – Provides first-line support for customers facing service disruptions.</li>
+                                </ul>
+                            </ul>
+                        </li>
+                        <li><strong>Chief Technology Officer (CTO)</strong> – Oversees cloud infrastructure, storage solutions, and development.
                         <ul>
-                            <li><strong>Gym Branch Management</strong>
+                            <li><strong>Head of Security Operations Center (SOC)</strong> – Leads real-time monitoring and response to cyber threats.</li>
+                            <strong>Incident Response Team (IRT)</strong>
                             <ul>
-                                <li><strong>Regional Managers</strong> – Supervise multiple gym locations.</li>
-                                <li><strong>Gym Managers</strong> – Oversee daily operations, memberships, and customer service.</li>
-                                <li><strong>Senior Receptionists</strong> – Handle financial transactions and account management.</li>
-                                <li><strong>Fitness Trainers &amp; Staff</strong> – Deliver training programs and assist members.</li>
-                            </ul></li>
-                        </ul></li>
-                        <ul>
-                            <li><strong>Legal &amp; Compliance Team</strong>
+                                <li><strong>Cyber Incident Lead</strong> – Coordinates response during security events.</li>
+                                <li><strong>Digital Forensics Analyst</strong> – Investigates attacks and analyzes malware behavior.</li>
+                                <li><strong>Threat Intelligence Specialist</strong> – Tracks emerging cyber threats and vulnerabilities.</li>
+                                <li><strong>Penetration Tester</strong> – Conducts security assessments and ethical hacking.</li>
+                            </ul>
+                            </li>
+                            
+                            <li><strong>Infrastructure Manager (IM)</strong> – Manages all day to day systems and operations of equipment</li>
+                            <strong>IT Infrastructure & Networking Team</strong>
                             <ul>
-                                <li><strong>Data Protection Officer (DPO)</strong> – Ensures compliance with GDPR and data security policies.</li>
-                                <li><strong>Compliance Manager</strong> – Manages adherence to regulations and internal policies.</li>
-                            </ul></li>
-                        </ul></li>
-                        <li><strong>Head of IT &amp; Cybersecurity</strong> – Leads IT security, network management, and data protection.
-                        <ul>
-                            <li><strong>IT Team</strong>
-                            <ul>
-                                <li><strong>Network Engineer</strong> – Manages firewalls, VPNs, and network integrity.</li>
-                                <li><strong>Cybersecurity Analyst</strong> – Monitors threats, performs risk assessments, and handles incidents.</li>
-                                <li><strong>Systems Administrator</strong> – Manages servers, databases, and cloud services.</li>
-                                <li><strong>Helpdesk Support Staff</strong> – Assists employees with IT-related issues.</li>
-                            </ul></li>
-                        </ul></li>
-                        
+                                <li><strong>Senior Network Engineer</strong> – Designs and maintains data center network architecture.</li>
+                                <li><strong>Cloud Security Engineer</strong> – Secures AWS and Azure environments.</li>
+                                <li><strong>Backup &amp; Disaster Recovery Specialist</strong> – Manages data integrity and recovery plans.</li>
+                                <li><strong>DevOps Engineers</strong> – Automate deployments and system monitoring.</li>
+                            </ul>
+                        </li>
+                    </ul></li>
                     </ol>
                 </div>
             </div>
@@ -113,19 +116,126 @@
     <div class="container mt-4 mb-4">
         <div class="alert alert-info" role="alert">
             <h4 class="alert-heading">Task Details</h4>
-            <p>As the cybersecurity analyst, you have been tasked with conducting a security assessment of Fitness+’s systems. 
+            <p>As the cybersecurity analyst, you have been tasked with conducting a security assessment of ColudVault's systems. 
                 Your task is to identify potential vulnerabilities and recommend appropriate measures to enhance security. </p>
                 <p><ul>
                     <li>You will have the opportunity to interview the Head of IT & Cybersecurity.</li>
-                    <li>You will need to assess the current security posture of Fitness+ and identify any weaknesses or gaps in their defenses.</li>
-                    <li>Based on your assessment, you are required to provide recommendations for improving the security of Fitness+’s systems.</li>
+                    <li>You will need to assess the current security posture of CloudVault and identify any weaknesses or gaps in their defenses.</li>
+                    <li>Based on your assessment, you are required to provide recommendations for improving the security of CloudVault's systems.</li>
                     <li>You are required to submit an email to your manager outlining your findings and recommendations.</li>
                 </ul></p>
                 <hr>
-                <p>You have 1 hour to examine the set up, before your meeting with the technical manager.</p>
+                <p>You have 1 hour to examine the set up, before your meeting with the Cyber Incident Lead.</p>
 
         </div>
     </div>
+
+    <div class="container mt-4 mb-4">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h4>Network Overview</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="col-6">
+                        <h4><strong>Head Office Network</strong></h4>
+                        <h3>Primary Data Center Network (UK)</h3>
+                        <ul>
+                            <li><i class="fas fa-route"></i> Cisco ASR 1001-HX Router (Border Gateway)</li>
+                            <li><i class="fas fa-shield-alt"></i> Cisco Firepower 2110 Firewall (Network Security & IDS/IPS)</li>
+                            <li><i class="fas fa-network-wired"></i> Cisco Nexus 9000 Switches (Core Data Traffic)</li>
+                            <li><i class="fas fa-fiber"></i> Redundant 100GbE Fiber Links between storage clusters</li>
+                            <li><i class="fas fa-database"></i> Off-Site Cold Storage Backup (Immutable Snapshots)</li>
+                        </ul>
+                        <h3>Secondary Disaster Recovery Network (EU)</h3>
+                        <ul>
+                            <li><i class="fas fa-route"></i> Cisco Meraki MX250 Router (Failover Site)</li>
+                            <li><i class="fas fa-wifi"></i> Cisco Meraki MR56 APs for secure staff Wi-Fi</li>
+                            <li><i class="fas fa-lock"></i> Encrypted VPN Tunnel to primary data center</li>
+                            <li><i class="fas fa-blockchain"></i> Blockchain-Based Data Integrity Verification</li>
+                        </ul>
+                        <h3>Key Systems</h3>
+                        <ul>
+                            <li><i class="fas fa-hdd"></i> Storage Nodes – Petabyte-scale, RAID 6 storage clusters</li>
+                            <li><i class="fas fa-user"></i> Client Access Portals – Web-based login for data retrieval</li>
+                            <li><i class="fas fa-lock"></i> Encryption Gateway – AES-256 encrypted client data at rest</li>
+                            <li><i class="fas fa-check"></i> Backup Verification System – AI-based anomaly detection for integrity checks</li>
+                            <li><i class="fas fa-terminal"></i> Incident Response Team Workstations – Secure terminals for forensic analysis</li>
+                        </ul>
+                        </div>
+                        <div class="col-6">
+                            <canvas id="networkCanvas" width="1000" height="600"></canvas>
+                            <script>
+                                const canvas = document.getElementById("networkCanvas");
+                                const ctx = canvas.getContext("2d");
+                        
+                                function drawDevice(x, y, label, color = "#007bff") {
+                                    ctx.fillStyle = color;
+                                    ctx.fillRect(x, y, 160, 40);
+                                    ctx.fillStyle = "#fff";
+                                    ctx.font = "12px Arial";
+                                    ctx.fillText(label, x + 10, y + 25);
+                                }
+                        
+                                function drawConnection(x1, y1, x2, y2) {
+                                    ctx.strokeStyle = "#333";
+                                    ctx.lineWidth = 2;
+                                    ctx.beginPath();
+                                    ctx.moveTo(x1 + 80, y1 + 20);
+                                    ctx.lineTo(x2 + 80, y2 + 20);
+                                    ctx.stroke();
+                                }
+                                function drawCloud(x, y, size) {
+                                    ctx.beginPath();
+                                    ctx.arc(x, y, size, Math.PI * 0.25, Math.PI * 1.75); // Main cloud body
+                                    ctx.arc(x + size * 0.8, y - size * 0.6, size * 0.7, Math.PI * 1.1, Math.PI * 2.1); // Right puff
+                                    ctx.arc(x - size * 0.8, y - size * 0.6, size * 0.6, Math.PI * 1.9, Math.PI * 2.9); // Left puff
+                                    ctx.arc(x + size * 0.3, y - size * 0.9, size * 0.6, Math.PI * 1.2, Math.PI * 2.2); // Top puff
+                                    ctx.closePath();
+                                    ctx.fillStyle = "#cce5ff"; // Light blue cloud color
+                                    ctx.fill();
+                                    ctx.strokeStyle = "#6699cc"; // Slightly darker blue outline
+                                    ctx.lineWidth = 2;
+                                    ctx.stroke();
+                                }
+                        
+                                // Draw Devices
+                                const firewall = { x: 650, y: 50, label: "Firewall\n192.168.0.1" };
+                                const router = { x: 450, y: 150, label: "Core Router\n192.168.1.1" };
+                                const switch1 = { x: 300, y: 250, label: "Data Center Switch\n192.168.1.2" };
+                                const switch2 = { x: 600, y: 250, label: "Access Switch\n192.168.1.3" };
+                                const ap = { x: 750, y: 350, label: "Wi-Fi AP\n192.168.1.4" };
+                                const vpn = { x: 150, y: 350, label: "VPN Gateway\n192.168.1.5" };
+                                const backup = { x: 450, y: 450, label: "Backup System\n192.168.1.6" };
+                                const server = { x: 300, y: 450, label: "Server (DHCP/AD/DC)\n192.168.1.7" };
+                                const cloud = { x: 50, y: 50, label: "Cloud\n203.0.113.1" };
+                        
+                        
+                                drawCloud(150, 100, 50);
+                                drawDevice(firewall.x, firewall.y, firewall.label, "#ff0000");
+                                drawDevice(router.x, router.y, router.label, "#ff8000");
+                                drawDevice(switch1.x, switch1.y, switch1.label, "#007bff");
+                                drawDevice(switch2.x, switch2.y, switch2.label, "#007bff");
+                                drawDevice(ap.x, ap.y, ap.label, "#00aa00");
+                                drawDevice(vpn.x, vpn.y, vpn.label, "#9933ff");
+                                drawDevice(backup.x, backup.y, backup.label, "#ffcc00");
+                                drawDevice(server.x, server.y, server.label, "#ffcc00");
+                                drawDevice(cloud.x, cloud.y, cloud.label, "#00bfff");
+                        
+                                // Draw Connections
+                                drawConnection(firewall.x, firewall.y, router.x, router.y - 20);
+                                drawConnection(router.x, router.y, switch1.x, switch1.y);
+                                drawConnection(router.x, router.y, switch2.x, switch2.y);
+                                drawConnection(switch2.x, switch2.y, ap.x, ap.y);
+                                drawConnection(switch1.x, switch1.y, backup.x, backup.y);
+                                drawConnection(switch1.x, switch1.y, vpn.x, vpn.y);
+                                drawConnection(switch1.x, switch1.y, server.x, server.y);
+                                drawConnection(firewall.x, firewall.y, cloud.x, cloud.y + 20);
+                            </script>
+                        </div>
+
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>

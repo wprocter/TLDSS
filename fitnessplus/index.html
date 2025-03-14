@@ -129,6 +129,90 @@
 
         </div>
     </div>
+
+    <div class="container mt-4 mb-4">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h4>Network Overview</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="col-6">
+                            <h2>Head Office Network</h2>
+                            <canvas id="headOfficeCanvas" width="800" height="400"></canvas>
+                            <ul>
+                                <li><i class="fas fa-network-wired"></i> Cisco ISR 4331 Router (Internet Gateway) - IP: 192.168.1.1</li>
+                                <li><i class="fas fa-shield-alt"></i> Cisco ASA 5506-X Firewall (Perimeter Security) - IP: 192.168.1.2</li>
+                                <li><i class="fas fa-server"></i> Cisco Catalyst 9200 Series Switches (Core Network) - IP: 192.168.1.3</li>
+                                <li><i class="fas fa-lock"></i> VPN Gateway for remote management - IP: 192.168.1.4</li>
+                                <li><i class="fas fa-fiber"></i> Redundant Fiber Connection to Data Centre</li>
+                            </ul>
+                    
+                            <h2>Gym Branch Network</h2>
+                            <canvas id="gymBranchCanvas" width="800" height="400"></canvas>
+                            <ul>
+                                <li><i class="fas fa-network-wired"></i> Cisco Meraki MX68 Router (Cloud-Managed) - IP: 192.168.2.1</li>
+                                <li><i class="fas fa-wifi"></i> Cisco Meraki MR46 Access Points (Wi-Fi for Members & Staff) - IP: 192.168.2.2</li>
+                                <li><i class="fas fa-server"></i> Cisco Catalyst 2960-L Switches (Local Connectivity) - IP: 192.168.2.3</li>
+                                <li><i class="fas fa-project-diagram"></i> Segregated VLANs for customer Wi-Fi, staff systems, and IoT devices</li>
+                                <li><i class="fas fa-lock"></i> Access Control System for secure entry to facilities</li>
+                            </ul>
+                    
+                            <h2>Key Systems</h2>
+                            <ul>
+                                <li><i class="fas fa-desktop"></i> Customer Reception Terminals – Used for check-in, booking, and payments</li>
+                                <li><i class="fas fa-user-shield"></i> Senior Receptionist Workstation – Elevated access for financial transactions</li>
+                                <li><i class="fas fa-laptop"></i> Managerial Office Workstations – Payroll, inventory, and HR access</li>
+                                <li><i class="fas fa-tools"></i> Maintenance Systems – Security cameras, HVAC, and door control</li>
+                                <li><i class="fas fa-candy-cane"></i> Integrated Vending Machines – Remotely monitored for stock and payments</li>
+                                <li><i class="fas fa-swimmer"></i> Swimming Pool Sanitation & Control – Automated chemical regulation</li>
+                                <li><i class="fas fa-video"></i> CCTV & Security System – Monitored via a secure network</li>
+                            </ul>
+                    
+                            <h3>Computer System Overview</h3>
+                            <ul>
+                                <li><i class="fas fa-desktop"></i> Reception Terminals: Dell OptiPlex 7090, running Windows 11 Pro, with biometric access</li>
+                                <li><i class="fas fa-laptop"></i> Manager Workstations: HP EliteBook 850 G8, Windows 11, encrypted storage</li>
+                                <li><i class="fas fa-server"></i> CCTV Server: Dell PowerEdge R650, RAID 10 Storage, Linux-based NVR</li>
+                                <li><i class="fas fa-cloud"></i> Cloud Services: Microsoft Azure for backups, AWS EC2 for member databases</li>
+                                <li><i class="fas fa-wifi"></i> Wi-Fi Security: WPA3 Enterprise authentication for staff, WPA2 for guest network</li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <canvas id="headOfficeCanvas" width="800" height="400"></canvas>
+
+                            <script>
+                                // JavaScript to draw network diagrams on canvas elements
+                                function drawNetworkDiagram(canvasId, devices) {
+                                    const canvas = document.getElementById(canvasId);
+                                    const ctx = canvas.getContext('2d');
+                                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                        
+                                    devices.forEach((device, index) => {
+                                        ctx.fillStyle = 'black';
+                                        ctx.fillRect(50, 50 + index * 50, 200, 40);
+                                        ctx.fillStyle = 'white';
+                                        ctx.fillText(device.name + " - IP: " + device.ip, 60, 75 + index * 50);
+                                    });
+                                }
+                        
+                                const headOfficeDevices = [
+                                    { name: 'Cisco ISR 4331 Router', ip: '192.168.1.1' },
+                                    { name: 'Cisco ASA 5506-X Firewall', ip: '192.168.1.2' },
+                                    { name: 'Cisco Catalyst 9200 Series Switches', ip: '192.168.1.3' },
+                                    { name: 'VPN Gateway', ip: '192.168.1.4' }
+                                ];
+                        
+                                const gymBranchDevices = [
+                                    { name: 'Cisco Meraki MX68 Router', ip: '192.168.2.1' },
+                                    { name: 'Cisco Meraki MR46 Access Points', ip: '192.168.2.2' },
+                                    { name: 'Cisco Catalyst 2960-L Switches', ip: '192.168.2.3' }
+                                ];
+                        
+                                drawNetworkDiagram('headOfficeCanvas', headOfficeDevices);
+                                drawNetworkDiagram('gymBranchCanvas', gymBranchDevices);
+                            </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
